@@ -10,9 +10,9 @@ const currentURL = window.location.href;
 navLinks.forEach((link) => {
   if (link.href === currentURL) {
     link.classList.add("active");
-    link
-      .closest("aside")
-      .parentElement.querySelector(".drop-icon")
-      .classList.add("active");
+    // link
+    //   .closest("aside")
+    //   .parentElement.querySelector(".drop-icon")
+    //   .classList.add("active");
   }
 });
