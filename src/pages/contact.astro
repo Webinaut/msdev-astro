@@ -1,0 +1,24 @@
+---
+import Layout from "../layouts/Layout.astro";
+import ContactForm from "../components/ContactForm.astro";
+const title = "Contact Me";
+---
+
+<Layout>
+  <h1>{title}</h1>
+
+  <div class="container">
+    <p>
+      I would love to hear from you. Just complete the form below and I shall
+      get back to you as soon as I can.
+    </p>
+    <article>
+      <ContactForm />
+    </article>
+  </div>
+</Layout>
+<style>
+  h1 {
+    text-align: center;
+  }
+</style>

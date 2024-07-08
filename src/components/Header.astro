@@ -1,0 +1,266 @@
+---
+import logo from "../images/MS-Logo.png?url";
+import Navigation from "./Navigation.astro";
+import Hamburger from "./Hamburger.astro";
+// import DownIcon from "./QuillInlineDown.astro";
+---
+
+<div class="container-fluid">
+  <div class="top-bar">
+    <Hamburger />
+
+    <div class="logo">
+      <a href="/">
+        <img src={logo} alt="My Logo" />
+      </a>
+    </div>
+  </div>
+  <Navigation />
+  <!-- <nav class="main-nav">
+    <ul>
+      <li>
+        <a href="/">Home</a>
+      </li>
+      <li>
+        <a href="#">
+          <label for="sm1" title="Open Sub-menu" class="drop-icon"
+            >Martin <DownIcon />
+          </label>
+        </a>
+        <input type="checkbox" class="dropdown" id="sm1" />
+        <aside>
+          <ul class="sub-menu1">
+            <li><a href="/about-me">About Me</a></li>
+            <li><a href="/testimonials">Testimonials</a></li>
+          </ul>
+        </aside>
+      </li>
+      <li>
+        <a href="#">
+          <label for="sm2" title="Open Sub-menu" class="drop-icon"
+            >Developer <DownIcon />
+          </label>
+        </a>
+        <input type="checkbox" class="dropdown" id="sm2" />
+        <aside>
+          <ul class="sub-menu2">
+            <li><a href="/portfolio">Portfolio</a></li>
+            <li><a href="/services">Services</a></li>
+          </ul>
+        </aside>
+      </li>
+      <li>
+        <a href="/contact">Contact Me</a>
+      </li>
+    </ul>
+  </nav> -->
+</div>
+<style lang="scss">
+  // .container-fluid {
+  //   background-color: var(--pico-color);
+  //   padding: 20px;
+  // }
+  // .container-fluid img {
+  //   height: 35px;
+  //   vertical-align: middle;
+  // }
+  // .top-bar {
+  //   display: flex;
+  //   justify-content: space-between;
+  //   align-items: center;
+  // }
+
+  // nav li,
+  // .drop-icon {
+  //   margin: 0;
+  //   padding: 0;
+  // }
+
+  // .main-nav li label.drop-icon:hover,
+  // .main-nav li a:hover {
+  //   cursor: pointer;
+  //   color: var(--pico-primary-hover);
+  // }
+
+  // .container-fluid nav ul li {
+  //   padding: 0 10px;
+  // }
+
+  // .container-fluid nav ul li a {
+  //   color: hsl(0, 0%, 100%);
+  // }
+  // .active {
+  //   color: var(--pico-primary) !important;
+  //   /* border-bottom: 2px solid var(--pico-primary);
+  //   border-radius: var(--pico-border-radius); */
+  // }
+  // // .sm1-label:has(+ .sub-menu1 > li > a[class*="active"]) {
+  // //   color: var(--pico-primary) !important;
+  // // }
+  // .main-nav input[type="checkbox"] {
+  //   display: none;
+  // }
+  // /* Menu */
+  // nav li :where(a, [role="link"]):not(:hover),
+  // label {
+  //   color: #fff;
+  // }
+  // .hamburger {
+  //   display: none;
+  //   cursor: pointer;
+  // }
+  // @media only screen and (min-width: 769px) {
+  //   .container-fluid {
+  //     display: flex;
+  //     align-items: center;
+  //     justify-content: space-between;
+  //   }
+  //   .main-nav {
+  //     display: flex;
+  //     justify-content: flex-end;
+  //   }
+  //   .logo {
+  //     display: flex;
+  //     justify-content: flex-start;
+  //   }
+
+  //   .sub-menu1,
+  //   .sub-menu2 {
+  //     position: absolute;
+  //     background: var(--pico-primary-inverse);
+  //     padding: 0.5em;
+  //     border: solid var(--pico-primary);
+  //     border-width: 2px 0 0 0;
+  //     box-shadow: 0px 4px 10px -2px rgba(0, 0, 0, 0.1);
+  //     display: none;
+  //   }
+  //   .main-nav .sub-menu1 > li > a,
+  //   .main-nav .sub-menu2 > li > a {
+  //     color: var(--pico-submenu-color);
+  //   }
+  //   .main-nav li:has(label:hover) .sub-menu1,
+  //   .sub-menu1:hover,
+  //   .main-nav li:has(label:hover) .sub-menu2,
+  //   .sub-menu2:hover {
+  //     display: block;
+  //   }
+  //   .main-nav .sub-menu1 li a:hover,
+  //   .main-nav .sub-menu2 li a:hover {
+  //     color: var(--pico-primary-hover);
+  //   }
+  // }
+
+  // @media only screen and (max-width: 768px) {
+  //   .logo {
+  //     display: block;
+  //     text-align: right;
+  //   }
+  //   nav,
+  //   nav ul,
+  //   nav li {
+  //     display: block;
+  //     text-align: left;
+  //   }
+  //   nav li {
+  //     margin-bottom: var(--pico-nav-link-spacing-vertical);
+  //   }
+  //   /*
+  //   * Just a quick hamburger
+  //   */
+
+  //   .top-bar {
+  //     margin: 1em 1em 1em 0;
+  //   }
+  //   .hamburger {
+  //     display: block;
+  //   }
+  //   .hamburger.active .bar:nth-child(2) {
+  //     opacity: 0;
+  //   }
+  //   .hamburger.active .bar:nth-child(1) {
+  //     transform: translateY(10px) rotate(45deg);
+  //   }
+  //   .hamburger.active .bar:nth-child(3) {
+  //     transform: translateY(-8px) rotate(-45deg);
+  //   }
+  //   .bar {
+  //     display: block;
+  //     width: 33px;
+  //     height: 4px;
+  //     margin-bottom: 5px;
+  //     // position: relative;
+
+  //     background: var(--pico-primary-inverse);
+  //     border-radius: 3px;
+
+  //     -webkit-transition: all 0.3s ease;
+  //     transition: all 0.3s ease;
+  //   }
+  //   .main-nav {
+  //     display: none;
+  //   }
+  //   .main-nav.active {
+  //     display: block;
+  //   }
+
+  //   /* Menu */
+  //   nav li :where(a, [role="link"]):not(:hover),
+  //   label {
+  //     color: #fff;
+  //   }
+  //   /* Dropdown Styles */
+  //   .main-nav .sub-menu1,
+  //   .main-nav .sub-menu2 {
+  //     display: none;
+  //   }
+  //   .main-nav:has(input#sm1[type="checkbox"]:checked) .sub-menu1 {
+  //     display: block;
+  //     background-color: var(--pico-primary-hover-background);
+  //     width: fit-content;
+  //     margin: 1em 0;
+  //   }
+  //   .main-nav:has(input#sm2[type="checkbox"]:checked) .sub-menu2 {
+  //     display: block;
+  //     background-color: var(--pico-primary-hover-background);
+  //     width: fit-content;
+  //     margin: 1em 0;
+  //   }
+
+  //   .main-nav li label.drop-icon {
+  //     color: #fff;
+  //     display: inline-block;
+  //   }
+  // }
+</style>
+<script>
+  // const { pathname } = window.location;
+  // const activeNavigationElement = document.querySelector(
+  //   `nav a[href="${pathname}"]`
+  // );
+  // if (activeNavigationElement) {
+  //   activeNavigationElement.classList.add("active");
+  //   activeNavigationElement
+  //     .closest("aside")
+  //     .parentElement.querySelector(".drop-icon")
+  //     .classList.add("active");
+  // activeNavigationElement
+  //   .closest("aside")
+  //   ?.parentElement?.children[1]?.labels[0].classList.add("active");
+  // }
+
+  // responsive menu
+  // const hamburger = document.querySelector(".hamburger");
+  // const navMenu = document.querySelector(".main-nav");
+
+  // hamburger.addEventListener("click", () => {
+  //   hamburger.classList.toggle("active");
+  //   navMenu.classList.toggle("active");
+  // });
+
+  // document.querySelectorAll(".nav-link").forEach((n) =>
+  //   n.addEventListener("click", () => {
+  //     hamburger.classList.remove("active");
+  //     navMenu.classList.remove("active");
+  //   })
+  // );
+</script>
