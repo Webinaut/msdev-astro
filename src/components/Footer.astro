@@ -27,6 +27,8 @@ const year = new Date().getFullYear();
     font-size: 0.9rem;
   }
 </style>
-<script is:inline>
-  document.getElementById("footer-year").innerText = new Date().getFullYear();
+<script>
+  document.getElementById("footer-year").innerText = new Date()
+    .getFullYear()
+    .toString();
 </script>
