@@ -1,5 +1,5 @@
 <div class="container-fluid">
-  <footer>&copy; Martin Slack</footer>
+  <footer>&copy; Martin Slack 2024 - <span id="year"></span></footer>
 </div>
 <style>
   .container-fluid {
@@ -21,3 +21,6 @@
     font-size: 0.9rem;
   }
 </style>
+<script>
+  document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
