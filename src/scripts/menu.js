@@ -1,4 +1,3 @@
-console.log("menu.js loaded");
 document.querySelector(".hamburger").addEventListener("click", () => {
   document.querySelector(".main-nav").classList.toggle("active");
   document.querySelector(".hamburger").classList.toggle("expanded");
