@@ -1,5 +1,11 @@
+---
+const year = new Date().getFullYear();
+---
+
 <div class="container-fluid">
-  <footer>&copy; Martin Slack 2024 - <span id="year"></span></footer>
+  <footer>
+    &copy; Martin Slack 2024 - <span id="footer-year">{year}</span>
+  </footer>
 </div>
 <style>
   .container-fluid {
@@ -21,8 +27,6 @@
     font-size: 0.9rem;
   }
 </style>
-<script>
-  document.getElementById("year").innerHTML = new Date()
-    .getFullYear()
-    .toString();
+<script is:inline>
+  document.getElementById("footer-year").innerText = new Date().getFullYear();
 </script>
