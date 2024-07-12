@@ -12,7 +12,8 @@ const currentURL = window.location.href;
 console.log("🚀 ~ currentURL:", currentURL);
 navLinks.forEach((link) => {
   console.log("🚀 ~ link.href:", link.href);
-  if (link.href === currentURL) {
+
+  if (link.href == currentURL) {
     link.classList.add("active");
     link
       .closest("aside")
