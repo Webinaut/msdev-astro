@@ -7,7 +7,9 @@ document.querySelector(".hamburger").addEventListener("click", () => {
 // Set active class on nav when the page is active
 const nav = document.querySelector(".main-nav");
 const navLinks = nav.querySelectorAll("a");
+console.log("🚀 ~ navLinks:", navLinks);
 const currentURL = window.location.href;
+console.log("🚀 ~ currentURL:", currentURL);
 navLinks.forEach((link) => {
   if (link.href === currentURL) {
     link.classList.add("active");
