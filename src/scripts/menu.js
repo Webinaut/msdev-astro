@@ -1,5 +1,7 @@
+console.log("menu.js loaded");
 document.querySelector(".hamburger").addEventListener("click", () => {
   document.querySelector(".main-nav").classList.toggle("expanded");
+  document.querySelector(".hamburger").classList.toggle("expanded");
 });
 
 // Set active class on nav when the page is active
