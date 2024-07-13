@@ -1,4 +1,4 @@
-console.log("menu.js loaded");
+// Toggle Hamburger
 document.querySelector(".hamburger").addEventListener("click", () => {
   document.querySelector(".main-nav").classList.toggle("expanded");
   document.querySelector(".hamburger").classList.toggle("expanded");
@@ -8,14 +8,10 @@ document.querySelector(".hamburger").addEventListener("click", () => {
 const nav = document.querySelector(".main-nav");
 const navLinks = nav.querySelectorAll("a");
 const currentURL = window.location.href;
-console.log("🚀 ~ currentURL:", currentURL);
 navLinks.forEach((link) => {
-  console.log("🚀 ~ link.href:", link.href);
-
   if (link.href === currentURL) {
     link.classList.add("active");
-
-    // if class = submenu{
+    // Highlight Sub-menu Label if Sub-Menu Active
     if (link.closest("ul").classList.contains("sub-menu")) {
       link
         .closest("aside")
