@@ -64,7 +64,7 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"],
 a[role="button"] {
-  #{$css-var-prefix}font-weight: 400;
+  #{$css-var-prefix}font-weight: 500;
   --shadow-color: 0deg 0% 0%;
   box-shadow: 0.3px 0.5px 0.8px hsl(var(--shadow-color) / 0.07),
     1.2px 2.3px 3.4px -0.4px hsl(var(--shadow-color) / 0.11),
@@ -73,12 +73,15 @@ a[role="button"] {
 }
 // Astro Styles
 .container-fluid {
-  background-color: var(--pico-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--pico-primary-background);
   padding: 20px;
-}
-.container-fluid img {
-  height: 35px;
-  vertical-align: middle;
+  & img {
+    height: 35px;
+    vertical-align: middle;
+  }
 }
 
 nav li,
@@ -96,7 +99,8 @@ nav li,
   padding: 0 10px;
 }
 .active {
-  color: var(--pico-primary) !important;
+  color: var(--pico-primary);
+  padding-bottom: 0.2em;
   border-bottom: 2px solid var(--pico-primary);
   border-radius: var(--pico-border-radius);
 }
@@ -108,28 +112,12 @@ nav li,
 .sub-menu {
   display: none;
 }
-// .sub-menu1,
-// .sub-menu2 {
-//   display: none;
-// }
-/* Menu */
 
-// .main-nav:has(input#sm1[type="checkbox"]:checked) #sub-menu1 {
-//   display: block;
-// }
-// .main-nav:has(input#sm2[type="checkbox"]:checked) #sub-menu2 {
-//   display: block;
-// }
-
-.container-fluid {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
 @media only screen and (min-width: 769px) {
   nav > ul > li > a,
   label {
-    color: #fff;
+    color: var(--pico-primary-inverse);
+    font-weight: 500;
   }
 
   .main-nav {
@@ -149,34 +137,18 @@ nav li,
     border-width: 2px 0 0 0;
     box-shadow: 0px 4px 10px -2px rgba(0, 0, 0, 0.1);
   }
-  // .sub-menu1,
-  // .sub-menu2 {
-  //   position: absolute;
-  //   background: var(--pico-primary-inverse);
-  //   padding: 0.5em;
-  //   border: solid var(--pico-primary);
-  //   border-width: 2px 0 0 0;
-  //   box-shadow: 0px 4px 10px -2px rgba(0, 0, 0, 0.1);
-  // }
-  .main-nav .sub-menu > li > a {
+
+  .main-nav .sub-menu > li > a:not(.active) {
     color: var(--pico-submenu-color);
   }
-  // .main-nav .sub-menu1 > li > a,
-  // .main-nav .sub-menu2 > li > a {
-  //   color: var(--pico-submenu-color);
-  // }
+
   .main-nav li:has(label:hover) .sub-menu.martin,
   .sub-menu.martin:hover,
   .main-nav li:has(label:hover) .sub-menu.dev,
   .sub-menu.dev:hover {
     display: block;
   }
-  // .main-nav li:has(label:hover) .sub-menu1,
-  // .sub-menu1:hover,
-  // .main-nav li:has(label:hover) .sub-menu2,
-  // .sub-menu2:hover {
-  //   display: block;
-  // }
+
   .main-nav .sub-menu.martin li a:hover,
   .main-nav .sub-menu.dev li a:hover {
     color: var(--pico-primary-hover);
@@ -230,7 +202,6 @@ nav li,
     width: 33px;
     height: 4px;
     margin-bottom: 5px;
-    // position: relative;
     background: var(--pico-primary-inverse);
     border-radius: 3px;
     -webkit-transition: all 0.3s ease;
@@ -256,6 +227,9 @@ nav li,
   label {
     color: var(--pico-submenu-color);
   }
+  nav li a.active {
+    color: var(--pico-primary);
+  }
   /* Dropdown Styles */
   .main-nav .sub-menu.martin,
   .main-nav .sub-menu.dev {
@@ -263,14 +237,14 @@ nav li,
   }
   .main-nav:has(input#sm1[type="checkbox"]:checked) .sub-menu.martin {
     display: block;
-    color: #fff;
+    color: var(--pico-primary-inverse);
     background-color: var(--pico-primary-hover-background);
     width: fit-content;
     margin: 1em 0;
   }
   .main-nav:has(input#sm2[type="checkbox"]:checked) .sub-menu.dev {
     display: block;
-    color: #fff;
+    color: var(--pico-primary-inverse);
     background-color: var(--pico-primary-hover-background);
     width: fit-content;
     margin: 1em 0;
