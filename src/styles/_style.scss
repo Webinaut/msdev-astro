@@ -112,7 +112,9 @@ nav li,
 .sub-menu {
   display: none;
 }
-
+.container.bread {
+  margin: 1em 0 0.5em 8%;
+}
 @media only screen and (min-width: 769px) {
   nav > ul > li > a,
   label {
@@ -238,14 +240,14 @@ nav li,
   .main-nav:has(input#sm1[type="checkbox"]:checked) .sub-menu.martin {
     display: block;
     color: var(--pico-primary-inverse);
-    background-color: var(--pico-primary-hover-background);
+    background-color: var(--pico-primary-background);
     width: fit-content;
     margin: 1em 0;
   }
   .main-nav:has(input#sm2[type="checkbox"]:checked) .sub-menu.dev {
     display: block;
     color: var(--pico-primary-inverse);
-    background-color: var(--pico-primary-hover-background);
+    background-color: var(--pico-primary-background);
     width: fit-content;
     margin: 1em 0;
   }
