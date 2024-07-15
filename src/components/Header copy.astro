@@ -1,6 +1,5 @@
 ---
-// import logo from "../images/MS-Logo.png?url";
-import Logo from "./Logo.astro";
+import logo from "../images/MS-Logo.png?url";
 import Navigation from "./Navigation.astro";
 import Hamburger from "./Hamburger.astro";
 import { Breadcrumbs } from "astro-breadcrumbs";
@@ -9,12 +8,11 @@ import "astro-breadcrumbs/breadcrumbs.scss";
 
 <div class="container-fluid">
   <Hamburger />
-  <Logo />
-  <!-- <div class="logo">
+  <div class="logo">
     <a href="/">
       <img src={logo} alt="My Logo" />
     </a>
-  </div> -->
+  </div>
   <Navigation />
 </div>
 <div class="container bread">
