@@ -12,9 +12,12 @@
 :root {
   #{$css-var-prefix}font-family: "Montserrat", sans-serif;
   #{$css-var-prefix}border-radius: 0.25rem;
+  #{$css-var-prefix}border-width: 1px;
   #{$css-var-prefix}form-element-spacing-vertical: 1rem;
   #{$css-var-prefix}form-element-spacing-horizontal: 1.25rem;
   #{$css-var-prefix}font-size: 16px;
+  #{$css-var-prefix}block-spacing-vertical: 3rem;
+  a,
   a:hover {
     text-decoration: none;
   }
@@ -60,16 +63,24 @@ h5 {
 }
 
 button,
+button[type="submit"],
 input[type="submit"],
 input[type="reset"],
 input[type="button"],
 a[role="button"] {
   #{$css-var-prefix}font-weight: 500;
-  --shadow-color: 0deg 0% 0%;
-  box-shadow: 0.3px 0.5px 0.8px hsl(var(--shadow-color) / 0.07),
-    1.2px 2.3px 3.4px -0.4px hsl(var(--shadow-color) / 0.11),
-    2.6px 5.2px 7.7px -0.8px hsl(var(--shadow-color) / 0.15),
-    5.8px 11.6px 17.1px -1.2px hsl(var(--shadow-color) / 0.18);
+  border-radius: 9999px;
+  padding: 0.5em;
+  min-width: 200px;
+  &:hover {
+    color: var(--pico-primary-inverse);
+    background-color: var(--pico-primary);
+    --shadow-color: 0deg 0% 0%;
+    box-shadow: 0.3px 0.5px 0.8px hsl(var(--shadow-color) / 0.07),
+      1.2px 2.3px 3.4px -0.4px hsl(var(--shadow-color) / 0.11),
+      2.6px 5.2px 7.7px -0.8px hsl(var(--shadow-color) / 0.15),
+      5.8px 11.6px 17.1px -1.2px hsl(var(--shadow-color) / 0.18);
+  }
 }
 // Astro Styles
 .container-fluid {
@@ -239,15 +250,15 @@ nav li,
   }
   .main-nav:has(input#sm1[type="checkbox"]:checked) .sub-menu.martin {
     display: block;
-    color: var(--pico-primary-inverse);
-    background-color: var(--pico-primary-background);
+    // color: var(--pico-primary-inverse);
+    // background-color: var(--pico-primary-hover-background);
     width: fit-content;
     margin: 1em 0;
   }
   .main-nav:has(input#sm2[type="checkbox"]:checked) .sub-menu.dev {
     display: block;
-    color: var(--pico-primary-inverse);
-    background-color: var(--pico-primary-background);
+    // color: var(--pico-primary-inverse);
+    // background-color: var(--pico-primary-hover-background);
     width: fit-content;
     margin: 1em 0;
   }

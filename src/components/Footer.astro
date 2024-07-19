@@ -1,10 +1,12 @@
 ---
-const year = new Date().getFullYear();
+const year = new Date();
 ---
 
 <div class="container-fluid">
   <footer>
-    &copy; Martin Slack 2017 - <span id="footer-year">{year}</span>
+    &copy; One Stop Sites 2017 - <span id="footer-year"
+      >{year.getFullYear()}</span
+    >
   </footer>
 </div>
 <style>
