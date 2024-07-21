@@ -1,8 +1,8 @@
 ---
 title: "The Ringwood Golf Club"
-slug: "the-ranges"
-description: "Events, Functions, Restaurant and Bar Venue"
-hero: "/port-images/rangesmansfield.png"
+slug: "ringwood-golf-club"
+description: "Member-focused Golf Club"
+hero: "/port-images/Ringwood-Golf-Club-Page-Header.png"
 tags: ["portfolio"]
 layout: "../../layouts/MarkdownPostLayout.astro"
 ---
@@ -10,8 +10,6 @@ layout: "../../layouts/MarkdownPostLayout.astro"
 ## Member-focused Golf Club
 
 [https://ringwoodgolfclub.com.au](https://ringwoodgolfclub.com.au/)
-
-[![The Ranges](images/Honour-Boards-–-Home-of-Ringwood-Golf-Club-Page-Header-1024x478.png)](https://ringwoodgolfclub.com.au)
 
 ### The Brief
 

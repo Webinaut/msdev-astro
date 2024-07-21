@@ -1,8 +1,8 @@
 ---
 title: "Strathbogie Flavours"
-slug: "the-ranges"
-description: "Events, Functions, Restaurant and Bar Venue"
-hero: "/port-images/rangesmansfield.png"
+slug: "strathbogie-flavours"
+description: "The Flavours Of The Strathbogie Ranges"
+hero: "/port-images/Home-Strathbogie-Flavours.png"
 tags: ["portfolio"]
 layout: "../../layouts/MarkdownPostLayout.astro"
 ---
@@ -10,8 +10,6 @@ layout: "../../layouts/MarkdownPostLayout.astro"
 ## The Flavours Of The Strathbogie Ranges
 
 [https://strathflavours.com.au/](https://strathflavours.com.au/)
-
-[![Strathbogie Flavours](images/Home-Strathbogie-Flavours.png)](https://strathflavours.com.au/)
 
 ### The Brief
 

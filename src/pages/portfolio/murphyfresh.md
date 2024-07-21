@@ -38,5 +38,3 @@ Plugins were also used for functional purposes such as a sitemap, security and b
 - Google Analytics
 - Plugin installation and customisation
 - Site optimisation and SEO
-
-](https://murphyfresh.com.au)

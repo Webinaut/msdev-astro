@@ -1,15 +1,13 @@
 ---
 title: "Paps Lane Kitchens"
-slug: "the-ranges"
-description: "Events, Functions, Restaurant and Bar Venue"
-hero: "/port-images/rangesmansfield.png"
+slug: "paps-lane-kitchens"
+description: "Custom Kitchens and Bathrooms"
+hero: "/port-images/Paps-Lane-Kitchens-Header.png"
 tags: ["portfolio"]
 layout: "../../layouts/MarkdownPostLayout.astro"
 ---
 
 ## Custom Kitchens and Bathrooms
-
-![](images/Paps-Lane-Kitchens-Header.png)
 
 ### The Brief
 
