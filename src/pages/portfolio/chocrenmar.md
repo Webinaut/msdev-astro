@@ -2,6 +2,7 @@
 title: "Chocolaterie RenMar"
 slug: "chocrenmar"
 description: "Marketing Artisan Chocolate Products"
+ranking: 7
 hero: "/port-images/chocrenmar_header.png"
 tags: ["portfolio"]
 layout: "../../layouts/MarkdownPostLayout.astro"

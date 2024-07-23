@@ -2,6 +2,7 @@
 title: "Strathbogie Flavours"
 slug: "strathbogie-flavours"
 description: "The Flavours Of The Strathbogie Ranges"
+ranking: 3
 hero: "/port-images/Home-Strathbogie-Flavours.png"
 tags: ["portfolio"]
 layout: "../../layouts/MarkdownPostLayout.astro"

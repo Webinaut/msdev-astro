@@ -2,6 +2,7 @@
 title: "The Mansfield Shearing Shed"
 slug: "shearingshedmansfield"
 description: "Traditional Barber Shop"
+ranking: 6
 hero: "/port-images/The-Mansfield-Shearing-Shed-Page-Header.png"
 tags: ["portfolio"]
 layout: "../../layouts/MarkdownPostLayout.astro"
